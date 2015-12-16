@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Tlf-XU-nw5">
+                                <rect key="frame" x="282" y="432" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSd-Z7-B0s">
+                                <rect key="frame" x="58" y="248" width="51" height="103"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="90"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="58" y="248" width="0.0" height="103"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="imple Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-a2-fTL">
+                                <rect key="frame" x="117" y="250" width="436" height="99"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="86"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="66" y="250" width="287" height="99"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H1W-a2-fTL" firstAttribute="leading" secondItem="lSd-Z7-B0s" secondAttribute="trailing" constant="8" id="3BA-0a-SNl"/>
+                            <constraint firstItem="Tlf-XU-nw5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="45P-ai-Uat"/>
+                            <constraint firstItem="Tlf-XU-nw5" firstAttribute="top" secondItem="H1W-a2-fTL" secondAttribute="bottom" constant="91" id="6C8-d9-mmw"/>
+                            <constraint firstItem="Tlf-XU-nw5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="150" id="JCO-bH-Gp9"/>
+                            <constraint firstItem="H1W-a2-fTL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="250" id="Nwq-ZT-6A6"/>
+                            <constraint firstItem="H1W-a2-fTL" firstAttribute="leading" secondItem="lSd-Z7-B0s" secondAttribute="trailing" constant="8" id="Vam-dY-Zw0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lSd-Z7-B0s" secondAttribute="bottom" constant="249" id="buj-tG-Ffy"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="H1W-a2-fTL" secondAttribute="bottom" constant="251" id="eAK-pR-uLi"/>
+                            <constraint firstAttribute="trailing" secondItem="H1W-a2-fTL" secondAttribute="trailing" constant="47" id="g8K-cE-455"/>
+                            <constraint firstItem="lSd-Z7-B0s" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="58" id="ueg-6C-G0w"/>
+                            <constraint firstItem="Tlf-XU-nw5" firstAttribute="centerX" secondItem="H1W-a2-fTL" secondAttribute="centerX" id="wYu-VR-Wqx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6C8-d9-mmw"/>
+                                <exclude reference="wYu-VR-Wqx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="activityViewIndicator" destination="Tlf-XU-nw5" id="SJy-w7-wyc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>

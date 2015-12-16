@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--NextVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NextVC" customModule="SimpleMoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Name" placeholder="Enter Name Here" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Nh-Gz-UrZ">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="textColor" red="0.24175134740000001" green="0.69202250539999999" blue="0.1380044557" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="72"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fK1-ok-drd"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Please enter name and touch &quot;Next&quot; to continue)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk2-ZZ-Wbw">
+                                <rect key="frame" x="191" y="340" width="219" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.81960784313725488" green="0.82352941176470584" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NO5-B6-P7x">
+                                <rect key="frame" x="65" y="276" width="471" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.81960784310000001" green="0.82352941180000006" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="3" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.24175134740000001" green="0.69202250539999999" blue="0.1380044557" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uk2-ZZ-Wbw" firstAttribute="top" secondItem="7Nh-Gz-UrZ" secondAttribute="bottom" constant="8" id="9Dh-zi-R3C">
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="7Nh-Gz-UrZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q4M-gk-mI0"/>
+                            <constraint firstItem="NO5-B6-P7x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="bIn-zB-NFe"/>
+                            <constraint firstItem="Uk2-ZZ-Wbw" firstAttribute="centerX" secondItem="7Nh-Gz-UrZ" secondAttribute="centerX" id="ftQ-s0-fru"/>
+                            <constraint firstItem="7Nh-Gz-UrZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j2K-nd-OvG"/>
+                            <constraint firstItem="NO5-B6-P7x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uU4-n1-0bW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7Nh-Gz-UrZ"/>
+                                <exclude reference="NO5-B6-P7x"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Q4M-gk-mI0"/>
+                                <exclude reference="j2K-nd-OvG"/>
+                                <exclude reference="bIn-zB-NFe"/>
+                                <exclude reference="uU4-n1-0bW"/>
+                                <exclude reference="9Dh-zi-R3C"/>
+                                <exclude reference="ftQ-s0-fru"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NO5-B6-P7x"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="uU4-n1-0bW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7Nh-Gz-UrZ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Q4M-gk-mI0"/>
+                                <include reference="j2K-nd-OvG"/>
+                                <include reference="bIn-zB-NFe"/>
+                                <include reference="9Dh-zi-R3C"/>
+                                <include reference="ftQ-s0-fru"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="F9n-gh-MlC"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="800"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="7Nh-Gz-UrZ" id="qwu-DZ-uRs"/>
+                        <segue destination="6Ld-gP-LA4" kind="show" identifier="EnterNameSegue" id="Hdx-j4-jBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1670" y="1015"/>
+        </scene>
+        <!--My MoneyVC-->
+        <scene sceneID="4jM-wo-Uff">
+            <objects>
+                <viewController storyboardIdentifier="MyMoneyVC" id="kmH-uW-gVl" customClass="MyMoneyVC" customModule="SimpleMoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sHh-MG-Xz2"/>
+                        <viewControllerLayoutGuide type="bottom" id="aYf-Uk-Ebb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r3A-fn-3SA">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXh-dH-bgQ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.81960784310000001" green="0.82352941180000006" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zty-Yi-U8B">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Xlk-1m-o0e"/>
+                                    <constraint firstAttribute="width" constant="140" id="f82-r5-ORT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
+                                <state key="normal" title="Add New &gt;">
+                                    <color key="titleColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Xlk-1m-o0e"/>
+                                        <exclude reference="f82-r5-ORT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Xlk-1m-o0e"/>
+                                        <include reference="f82-r5-ORT"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="addNewTapped:" destination="kmH-uW-gVl" eventType="touchUpInside" id="ERx-Mm-XaF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4L-O7-b8I">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="72"/>
+                                <color key="textColor" red="0.24175134740000001" green="0.69202250539999999" blue="0.1380044557" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c4L-O7-b8I" firstAttribute="centerX" secondItem="r3A-fn-3SA" secondAttribute="centerX" id="7nG-qA-NHp"/>
+                            <constraint firstItem="XXh-dH-bgQ" firstAttribute="top" secondItem="r3A-fn-3SA" secondAttribute="topMargin" constant="100" id="FYs-J8-9Aw"/>
+                            <constraint firstItem="zty-Yi-U8B" firstAttribute="top" secondItem="sHh-MG-Xz2" secondAttribute="bottom" constant="8" id="IN0-hv-uaW"/>
+                            <constraint firstItem="XXh-dH-bgQ" firstAttribute="centerX" secondItem="r3A-fn-3SA" secondAttribute="centerX" id="Q97-4a-ij6"/>
+                            <constraint firstItem="c4L-O7-b8I" firstAttribute="centerY" secondItem="r3A-fn-3SA" secondAttribute="centerY" id="iLc-sm-rGR"/>
+                            <constraint firstAttribute="trailing" secondItem="zty-Yi-U8B" secondAttribute="trailing" constant="8" id="tMF-wa-tih"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XXh-dH-bgQ"/>
+                                <exclude reference="zty-Yi-U8B"/>
+                                <exclude reference="c4L-O7-b8I"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="IN0-hv-uaW"/>
+                                <exclude reference="tMF-wa-tih"/>
+                                <exclude reference="FYs-J8-9Aw"/>
+                                <exclude reference="Q97-4a-ij6"/>
+                                <exclude reference="7nG-qA-NHp"/>
+                                <exclude reference="iLc-sm-rGR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="XXh-dH-bgQ"/>
+                                <include reference="zty-Yi-U8B"/>
+                                <include reference="c4L-O7-b8I"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="IN0-hv-uaW"/>
+                                <include reference="tMF-wa-tih"/>
+                                <include reference="FYs-J8-9Aw"/>
+                                <include reference="Q97-4a-ij6"/>
+                                <include reference="7nG-qA-NHp"/>
+                                <include reference="iLc-sm-rGR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="addNewButton" destination="zty-Yi-U8B" id="Eyb-Ig-SwX"/>
+                        <outlet property="totalBalance" destination="c4L-O7-b8I" id="gxj-bE-Ak2"/>
+                        <segue destination="6Ld-gP-LA4" kind="show" identifier="Money2ChooseSegue" animates="NO" id="lMa-cZ-Sho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5a0-Fg-2nW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3123" y="1015"/>
+        </scene>
+        <!--ExpenseVC-->
+        <scene sceneID="3ej-TY-AK0">
+            <objects>
+                <viewController storyboardIdentifier="ExpenseVC" id="ESo-oG-sk4" customClass="ExpenseVC" customModule="SimpleMoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bgg-09-j25"/>
+                        <viewControllerLayoutGuide type="bottom" id="bmK-pA-eGM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rXQ-ov-Oc6">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Expense" placeholder="Enter expense" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3j8-R6-VjW">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.1082987661" blue="0.14895784910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="72"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ESo-oG-sk4" id="p2K-7i-b94"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Expense" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGl-cx-oNo">
+                                <rect key="frame" x="65" y="276" width="471" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.1082987661" blue="0.14895784910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="3" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-fU-GPI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dc5-rO-us3"/>
+                                    <constraint firstAttribute="width" constant="140" id="isD-1C-MVw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
+                                <state key="normal" title="My Money &gt;">
+                                    <color key="titleColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Dc5-rO-us3"/>
+                                        <exclude reference="isD-1C-MVw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Dc5-rO-us3"/>
+                                        <include reference="isD-1C-MVw"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="myMoneyTapped:" destination="ESo-oG-sk4" eventType="touchUpInside" id="lny-wf-pbb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nr7-d5-9p7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="2ba-Me-uB2"/>
+                                    <constraint firstAttribute="width" secondItem="Nr7-d5-9p7" secondAttribute="height" multiplier="59:50" id="8GX-zB-gJ5"/>
+                                    <constraint firstAttribute="width" secondItem="Nr7-d5-9p7" secondAttribute="height" multiplier="59:50" id="AkW-i3-y5R"/>
+                                    <constraint firstAttribute="width" constant="354" id="Fsb-0j-onI">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button" image="success-next-button.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2ba-Me-uB2"/>
+                                        <exclude reference="8GX-zB-gJ5"/>
+                                        <exclude reference="AkW-i3-y5R"/>
+                                        <exclude reference="Fsb-0j-onI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="2ba-Me-uB2"/>
+                                        <include reference="8GX-zB-gJ5"/>
+                                        <exclude reference="AkW-i3-y5R"/>
+                                        <include reference="Fsb-0j-onI"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="nextTapped:" destination="ESo-oG-sk4" eventType="touchUpInside" id="9fC-Mg-4Tc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.96470588239999999" green="0.1082987661" blue="0.14895784910000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SGl-cx-oNo" firstAttribute="centerX" secondItem="rXQ-ov-Oc6" secondAttribute="centerX" id="4Wr-P1-hQb"/>
+                            <constraint firstItem="3j8-R6-VjW" firstAttribute="top" secondItem="SGl-cx-oNo" secondAttribute="bottom" constant="3" id="QPJ-kb-5lC">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="3j8-R6-VjW" firstAttribute="centerX" secondItem="rXQ-ov-Oc6" secondAttribute="centerX" id="Smp-cU-iTs"/>
+                            <constraint firstItem="Atx-fU-GPI" firstAttribute="top" secondItem="bgg-09-j25" secondAttribute="bottom" constant="8" id="b2u-bD-jMt"/>
+                            <constraint firstItem="SGl-cx-oNo" firstAttribute="top" secondItem="rXQ-ov-Oc6" secondAttribute="topMargin" constant="100" id="btE-Eh-pcm"/>
+                            <constraint firstItem="Nr7-d5-9p7" firstAttribute="centerX" secondItem="3j8-R6-VjW" secondAttribute="centerX" id="esu-1Z-qyM"/>
+                            <constraint firstItem="Nr7-d5-9p7" firstAttribute="width" secondItem="Nr7-d5-9p7" secondAttribute="height" multiplier="59:50" id="lDO-d3-Xsz"/>
+                            <constraint firstItem="Nr7-d5-9p7" firstAttribute="top" secondItem="3j8-R6-VjW" secondAttribute="bottom" constant="23" id="pcL-M0-Xpu">
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="Atx-fU-GPI" firstAttribute="trailing" secondItem="rXQ-ov-Oc6" secondAttribute="trailingMargin" constant="8" id="tJU-Ek-gMk"/>
+                            <constraint firstItem="3j8-R6-VjW" firstAttribute="centerY" secondItem="rXQ-ov-Oc6" secondAttribute="centerY" id="tPZ-o5-OVX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3j8-R6-VjW"/>
+                                <exclude reference="SGl-cx-oNo"/>
+                                <exclude reference="Atx-fU-GPI"/>
+                                <exclude reference="Nr7-d5-9p7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="QPJ-kb-5lC"/>
+                                <exclude reference="Smp-cU-iTs"/>
+                                <exclude reference="tPZ-o5-OVX"/>
+                                <exclude reference="b2u-bD-jMt"/>
+                                <exclude reference="tJU-Ek-gMk"/>
+                                <exclude reference="esu-1Z-qyM"/>
+                                <exclude reference="lDO-d3-Xsz"/>
+                                <exclude reference="pcL-M0-Xpu"/>
+                                <exclude reference="4Wr-P1-hQb"/>
+                                <exclude reference="btE-Eh-pcm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3j8-R6-VjW"/>
+                                <include reference="SGl-cx-oNo"/>
+                                <include reference="Atx-fU-GPI"/>
+                                <include reference="Nr7-d5-9p7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="QPJ-kb-5lC"/>
+                                <include reference="Smp-cU-iTs"/>
+                                <include reference="tPZ-o5-OVX"/>
+                                <include reference="b2u-bD-jMt"/>
+                                <include reference="tJU-Ek-gMk"/>
+                                <include reference="esu-1Z-qyM"/>
+                                <include reference="lDO-d3-Xsz"/>
+                                <include reference="pcL-M0-Xpu"/>
+                                <include reference="4Wr-P1-hQb"/>
+                                <include reference="btE-Eh-pcm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="expenseTextField" destination="3j8-R6-VjW" id="CcC-W1-W3d"/>
+                        <outlet property="myMoneyButton" destination="Atx-fU-GPI" id="5Fo-Lo-Lf0"/>
+                        <segue destination="kmH-uW-gVl" kind="show" identifier="Expense2MoneySegue" id="ivW-eS-IVa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kca-BC-BT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2401" y="1935"/>
+        </scene>
+        <!--ChooseVC-->
+        <scene sceneID="4t4-eC-SI7">
+            <objects>
+                <viewController storyboardIdentifier="ChooseVC" id="6Ld-gP-LA4" customClass="ChooseVC" customModule="SimpleMoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RgS-RV-mbe"/>
+                        <viewControllerLayoutGuide type="bottom" id="RbC-oD-dGp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9TW-zk-HnX">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZv-bA-Dg8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Wco-7W-N3M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
+                                <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
+                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                <state key="normal" title="Income &gt;">
+                                    <color key="titleColor" red="0.32321935892105103" green="0.7608342170715332" blue="0.20437973737716675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Wco-7W-N3M"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Wco-7W-N3M"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="incomeTapped:" destination="6Ld-gP-LA4" eventType="touchUpInside" id="g1J-v8-eyR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI2-wg-Ehf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="h23-bT-qCt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
+                                <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
+                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                <state key="normal" title="Expense &gt;">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="h23-bT-qCt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="h23-bT-qCt"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xh-W7-b5h">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="13E-Ig-ubO"/>
+                                    <constraint firstAttribute="width" constant="140" id="zbd-aU-3nx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
+                                <state key="normal" title="My Money &gt;">
+                                    <color key="titleColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="13E-Ig-ubO"/>
+                                        <exclude reference="zbd-aU-3nx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="13E-Ig-ubO"/>
+                                        <include reference="zbd-aU-3nx"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="myMoneyTapped:" destination="6Ld-gP-LA4" eventType="touchUpInside" id="OSP-rP-fNf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User's Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="YJs-oC-dRa">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.81960784310000001" green="0.82352941180000006" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MZv-bA-Dg8" firstAttribute="centerX" secondItem="9TW-zk-HnX" secondAttribute="centerX" id="4sP-wC-Npc"/>
+                            <constraint firstItem="0xh-W7-b5h" firstAttribute="top" secondItem="RgS-RV-mbe" secondAttribute="bottom" constant="8" id="7eK-pa-Zji"/>
+                            <constraint firstItem="0xh-W7-b5h" firstAttribute="trailing" secondItem="9TW-zk-HnX" secondAttribute="trailingMargin" constant="8" id="CdX-K0-n7x"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YJs-oC-dRa" secondAttribute="trailing" constant="22" id="Moa-hX-syt">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="lI2-wg-Ehf" firstAttribute="centerX" secondItem="9TW-zk-HnX" secondAttribute="centerX" id="TxL-gH-yvC"/>
+                            <constraint firstItem="MZv-bA-Dg8" firstAttribute="centerY" secondItem="9TW-zk-HnX" secondAttribute="centerY" multiplier="0.75" id="foN-fQ-CNy"/>
+                            <constraint firstItem="YJs-oC-dRa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9TW-zk-HnX" secondAttribute="leading" constant="22" id="hu5-Lo-zlz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="lI2-wg-Ehf" firstAttribute="centerY" secondItem="9TW-zk-HnX" secondAttribute="centerY" multiplier="1.25" id="jC1-v1-a6a"/>
+                            <constraint firstItem="YJs-oC-dRa" firstAttribute="top" secondItem="9TW-zk-HnX" secondAttribute="topMargin" constant="100" id="kcJ-Cy-t3f"/>
+                            <constraint firstItem="YJs-oC-dRa" firstAttribute="centerX" secondItem="9TW-zk-HnX" secondAttribute="centerX" id="o6O-ve-fgB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MZv-bA-Dg8"/>
+                                <exclude reference="lI2-wg-Ehf"/>
+                                <exclude reference="0xh-W7-b5h"/>
+                                <exclude reference="YJs-oC-dRa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7eK-pa-Zji"/>
+                                <exclude reference="CdX-K0-n7x"/>
+                                <exclude reference="4sP-wC-Npc"/>
+                                <exclude reference="foN-fQ-CNy"/>
+                                <exclude reference="TxL-gH-yvC"/>
+                                <exclude reference="jC1-v1-a6a"/>
+                                <exclude reference="Moa-hX-syt"/>
+                                <exclude reference="hu5-Lo-zlz"/>
+                                <exclude reference="kcJ-Cy-t3f"/>
+                                <exclude reference="o6O-ve-fgB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="MZv-bA-Dg8"/>
+                                <include reference="lI2-wg-Ehf"/>
+                                <include reference="0xh-W7-b5h"/>
+                                <include reference="YJs-oC-dRa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7eK-pa-Zji"/>
+                                <include reference="CdX-K0-n7x"/>
+                                <include reference="4sP-wC-Npc"/>
+                                <include reference="foN-fQ-CNy"/>
+                                <include reference="TxL-gH-yvC"/>
+                                <include reference="jC1-v1-a6a"/>
+                                <include reference="Moa-hX-syt"/>
+                                <include reference="hu5-Lo-zlz"/>
+                                <include reference="kcJ-Cy-t3f"/>
+                                <include reference="o6O-ve-fgB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="800"/>
+                    <connections>
+                        <outlet property="expenseButton" destination="lI2-wg-Ehf" id="StO-jx-5aH"/>
+                        <outlet property="incomeButton" destination="MZv-bA-Dg8" id="WH7-ht-R38"/>
+                        <outlet property="myMoneyButton" destination="0xh-W7-b5h" id="BYy-gA-YPF"/>
+                        <outlet property="userLabel" destination="YJs-oC-dRa" id="UIG-Xt-eVB"/>
+                        <segue destination="kmH-uW-gVl" kind="show" identifier="Choose2MoneySegue" id="Hpz-63-rki"/>
+                        <segue destination="UVy-83-zlm" kind="show" identifier="Choose2IncomeSegue" id="OSB-st-krs"/>
+                        <segue destination="ESo-oG-sk4" kind="show" identifier="Choose2ExpenseSegue" id="aYP-Ed-thJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1B-rz-t3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2401.5" y="1015.5"/>
+        </scene>
+        <!--IncomeVC-->
+        <scene sceneID="mg5-fY-9qs">
+            <objects>
+                <viewController storyboardIdentifier="IncomeVC" id="UVy-83-zlm" customClass="IncomeVC" customModule="SimpleMoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R3k-mx-39D"/>
+                        <viewControllerLayoutGuide type="bottom" id="OmZ-tZ-PKl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jtv-gh-WTc">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Income" placeholder="Enter Income" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzP-Sc-8uH">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="textColor" red="0.32321935892105103" green="0.7608342170715332" blue="0.20437973737716675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="72"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UVy-83-zlm" id="nd3-oU-2bg"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdY-uv-vQZ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KrI-n5-ONL"/>
+                                    <constraint firstAttribute="width" constant="140" id="mxy-Tz-wJL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
+                                <state key="normal" title="My Money &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KrI-n5-ONL"/>
+                                        <exclude reference="mxy-Tz-wJL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="KrI-n5-ONL"/>
+                                        <include reference="mxy-Tz-wJL"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="myMoneyTapped:" destination="UVy-83-zlm" eventType="touchUpInside" id="YHS-3G-I70"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Income" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeT-J2-Hwe">
+                                <rect key="frame" x="65" y="276" width="471" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.24175134740000001" green="0.69202250539999999" blue="0.1380044557" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="3" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExA-L3-6cN">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="Dsx-sP-kwc">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="ExA-L3-6cN" secondAttribute="height" multiplier="59:50" id="FY7-4u-JG5"/>
+                                    <constraint firstAttribute="width" constant="20" id="afS-Oq-Qo4"/>
+                                    <constraint firstAttribute="width" secondItem="ExA-L3-6cN" secondAttribute="height" multiplier="59:50" id="dz8-dr-c0c"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="success-next-button.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Dsx-sP-kwc"/>
+                                        <exclude reference="FY7-4u-JG5"/>
+                                        <exclude reference="afS-Oq-Qo4"/>
+                                        <exclude reference="dz8-dr-c0c"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Dsx-sP-kwc"/>
+                                        <exclude reference="FY7-4u-JG5"/>
+                                        <exclude reference="afS-Oq-Qo4"/>
+                                        <include reference="dz8-dr-c0c"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="nextTapped:" destination="UVy-83-zlm" eventType="touchUpInside" id="tRN-8n-pgG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.32321935892105103" green="0.7608342170715332" blue="0.20437973737716675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SeT-J2-Hwe" firstAttribute="centerX" secondItem="nzP-Sc-8uH" secondAttribute="centerX" id="7dJ-nN-66f"/>
+                            <constraint firstItem="nzP-Sc-8uH" firstAttribute="top" secondItem="SeT-J2-Hwe" secondAttribute="bottom" constant="4" id="Cm3-7E-kNy">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="nzP-Sc-8uH" firstAttribute="centerY" secondItem="jtv-gh-WTc" secondAttribute="centerY" id="IfN-dQ-Lc8"/>
+                            <constraint firstItem="ExA-L3-6cN" firstAttribute="centerX" secondItem="nzP-Sc-8uH" secondAttribute="centerX" id="JaL-WB-maV"/>
+                            <constraint firstItem="SeT-J2-Hwe" firstAttribute="top" secondItem="jtv-gh-WTc" secondAttribute="topMargin" constant="257" id="K9n-vU-oB1">
+                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="ExA-L3-6cN" firstAttribute="centerX" secondItem="nzP-Sc-8uH" secondAttribute="centerX" id="KDY-1A-xF2"/>
+                            <constraint firstItem="LdY-uv-vQZ" firstAttribute="trailing" secondItem="jtv-gh-WTc" secondAttribute="trailingMargin" constant="8" id="R0i-dI-XuF"/>
+                            <constraint firstItem="ExA-L3-6cN" firstAttribute="top" secondItem="nzP-Sc-8uH" secondAttribute="bottom" constant="8" id="Rvi-ub-JB6">
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="LdY-uv-vQZ" firstAttribute="top" secondItem="R3k-mx-39D" secondAttribute="bottom" constant="8" id="qcn-Di-doE"/>
+                            <constraint firstItem="nzP-Sc-8uH" firstAttribute="centerX" secondItem="jtv-gh-WTc" secondAttribute="centerX" id="rzp-0m-ls2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nzP-Sc-8uH"/>
+                                <exclude reference="LdY-uv-vQZ"/>
+                                <exclude reference="SeT-J2-Hwe"/>
+                                <exclude reference="ExA-L3-6cN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Cm3-7E-kNy"/>
+                                <exclude reference="IfN-dQ-Lc8"/>
+                                <exclude reference="rzp-0m-ls2"/>
+                                <exclude reference="JaL-WB-maV"/>
+                                <exclude reference="KDY-1A-xF2"/>
+                                <exclude reference="Rvi-ub-JB6"/>
+                                <exclude reference="R0i-dI-XuF"/>
+                                <exclude reference="qcn-Di-doE"/>
+                                <exclude reference="7dJ-nN-66f"/>
+                                <exclude reference="K9n-vU-oB1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nzP-Sc-8uH"/>
+                                <include reference="LdY-uv-vQZ"/>
+                                <include reference="SeT-J2-Hwe"/>
+                                <include reference="ExA-L3-6cN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Cm3-7E-kNy"/>
+                                <include reference="IfN-dQ-Lc8"/>
+                                <include reference="rzp-0m-ls2"/>
+                                <include reference="JaL-WB-maV"/>
+                                <exclude reference="KDY-1A-xF2"/>
+                                <include reference="Rvi-ub-JB6"/>
+                                <include reference="R0i-dI-XuF"/>
+                                <include reference="qcn-Di-doE"/>
+                                <include reference="7dJ-nN-66f"/>
+                                <include reference="K9n-vU-oB1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="incomeTextField" destination="nzP-Sc-8uH" id="pDs-kv-0SO"/>
+                        <outlet property="myMoneyButton" destination="LdY-uv-vQZ" id="ZAZ-TD-MMr"/>
+                        <segue destination="kmH-uW-gVl" kind="show" identifier="Income2MoneySegue" id="87H-dv-7mm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXg-6R-U0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2401" y="183"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="success-next-button.png" width="300" height="300"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ivW-eS-IVa"/>
+        <segue reference="Hdx-j4-jBd"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.24175134740000001" green="0.69202250539999999" blue="0.1380044557" alpha="1" colorSpace="calibratedRGB"/>
+</document>
