@@ -14,6 +14,7 @@
 		4CA20B951C2133CE00DA57DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B941C2133CE00DA57DA /* Main.storyboard */; };
 		4CA20B981C21340E00DA57DA /* chaChing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B971C21340E00DA57DA /* chaChing.wav */; };
 		4CA20B9A1C21345D00DA57DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B991C21345D00DA57DA /* LaunchScreen.storyboard */; };
+		4CA20B9D1C213E5A00DA57DA /* success-next-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B9C1C213E5A00DA57DA /* success-next-button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4CA20B941C2133CE00DA57DA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4CA20B971C21340E00DA57DA /* chaChing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chaChing.wav; sourceTree = "<group>"; };
 		4CA20B991C21345D00DA57DA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CA20B9C1C213E5A00DA57DA /* success-next-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-next-button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		4CA20B961C2133E100DA57DA /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				4CA20B9C1C213E5A00DA57DA /* success-next-button.png */,
 				4CA20B7D1C21318900DA57DA /* AppDelegate.swift */,
 				4CA20B871C21318900DA57DA /* Assets.xcassets */,
 				4CA20B8C1C21318900DA57DA /* Info.plist */,
@@ -148,6 +151,7 @@
 				4CA20B981C21340E00DA57DA /* chaChing.wav in Resources */,
 				4CA20B881C21318900DA57DA /* Assets.xcassets in Resources */,
 				4CA20B9A1C21345D00DA57DA /* LaunchScreen.storyboard in Resources */,
+				4CA20B9D1C213E5A00DA57DA /* success-next-button.png in Resources */,
 				4CA20B951C2133CE00DA57DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

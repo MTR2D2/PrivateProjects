@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--7Heaven-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="7Heaven" id="BYZ-38-t0r" customClass="MainView" customModule="_Heaven" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czf-Ff-A5g">
+                                <rect key="frame" x="237" y="245" width="126" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="dZA-e6-Ero"/>
+                                    <constraint firstAttribute="width" secondItem="Czf-Ff-A5g" secondAttribute="height" multiplier="42:37" id="fky-xL-Nyx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="72"/>
+                                <state key="normal" title="Play" backgroundImage="Oval 154.png">
+                                    <color key="titleColor" red="0.40790240370000003" green="1" blue="0.98624141310000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9E8-rT-vdE"/>
+                                    <action selector="skipForwardTapped:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="PLI-Tr-W8r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9p-he-uhp">
+                                <rect key="frame" x="170" y="438" width="260" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe on Paz to Skip Forward" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbI-no-VFX">
+                                <rect key="frame" x="63" y="113" width="475" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.40790240370000003" green="1" blue="0.98624141310000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TbI-no-VFX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-162" id="CcG-5L-HAq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TbI-no-VFX" secondAttribute="trailing" constant="42" id="EnL-K4-5Ea"/>
+                            <constraint firstItem="TbI-no-VFX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gix-tK-wWT"/>
+                            <constraint firstItem="Czf-Ff-A5g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O5N-Ip-pjm"/>
+                            <constraint firstItem="Czf-Ff-A5g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Urm-gF-mIF"/>
+                            <constraint firstItem="C9p-he-uhp" firstAttribute="centerX" secondItem="Czf-Ff-A5g" secondAttribute="centerX" id="hrq-8R-HE4"/>
+                            <constraint firstItem="C9p-he-uhp" firstAttribute="top" secondItem="Czf-Ff-A5g" secondAttribute="bottom" constant="82" id="j3S-Mf-OBG"/>
+                            <constraint firstItem="TbI-no-VFX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="43" id="kGt-YU-avZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fYL-qE-Trr"/>
+                    <connections>
+                        <outlet property="countLabel" destination="C9p-he-uhp" id="dZD-L5-aNt"/>
+                        <outlet property="playButton" destination="Czf-Ff-A5g" id="eGp-xk-6zI"/>
+                        <outlet property="statusLabel" destination="TbI-no-VFX" id="HRy-UU-AGf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="377"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Oval 154.png" width="802" height="402"/>
+    </resources>
+    <color key="tintColor" red="0.40790240370000003" green="1" blue="0.98624141310000002" alpha="1" colorSpace="calibratedRGB"/>
+</document>
