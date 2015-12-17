@@ -44,7 +44,8 @@ class MainView: UIViewController{
 //            default:
 //                print("Not a safe place for humans")
 //        }
-        
+        avQueuePlayer.actionAtItemEnd = .Advance
+
         originalCount = 420
         countLabel.text = "7:00"
         playButton.setTitleColor(UIColor.blackColor(), forState: .Selected)
@@ -99,6 +100,7 @@ class MainView: UIViewController{
         {
             countLabel.textColor = UIColor.redColor()
         }
+        avQueuePlayer.actionAtItemEnd = .Advance
         
         if originalCount == 0
         {
