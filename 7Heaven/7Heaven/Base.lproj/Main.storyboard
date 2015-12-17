@@ -45,15 +45,24 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKE-dh-IYe">
+                                <rect key="frame" x="384" y="285" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12e-ZE-RaH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.40790240370000003" green="1" blue="0.98624141310000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="VKE-dh-IYe" firstAttribute="leading" secondItem="Czf-Ff-A5g" secondAttribute="trailing" constant="21" id="7tb-0F-gD1"/>
                             <constraint firstItem="TbI-no-VFX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-162" id="CcG-5L-HAq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TbI-no-VFX" secondAttribute="trailing" constant="42" id="EnL-K4-5Ea"/>
                             <constraint firstItem="TbI-no-VFX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gix-tK-wWT"/>
                             <constraint firstItem="Czf-Ff-A5g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O5N-Ip-pjm"/>
                             <constraint firstItem="Czf-Ff-A5g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Urm-gF-mIF"/>
+                            <constraint firstItem="VKE-dh-IYe" firstAttribute="centerY" secondItem="Czf-Ff-A5g" secondAttribute="centerY" id="dXt-Pq-ege"/>
                             <constraint firstItem="C9p-he-uhp" firstAttribute="centerX" secondItem="Czf-Ff-A5g" secondAttribute="centerX" id="hrq-8R-HE4"/>
                             <constraint firstItem="C9p-he-uhp" firstAttribute="top" secondItem="Czf-Ff-A5g" secondAttribute="bottom" constant="82" id="j3S-Mf-OBG"/>
                             <constraint firstItem="TbI-no-VFX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="43" id="kGt-YU-avZ"/>

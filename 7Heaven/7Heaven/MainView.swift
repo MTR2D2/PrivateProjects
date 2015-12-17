@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 
-var shufflemode: MPMusicShuffleMode?
+//var shufflemode: MPMusicShuffleMode?
 
 class MainView: UIViewController{
     
@@ -36,14 +36,14 @@ class MainView: UIViewController{
         configurePlaylist()
         loadCurrentSong()
         
-        let shuffleSongs = MPMusicShuffleMode.Songs
-        switch shuffleSongs
-        {
-            case .Songs:
-                print("Mostly harmless")
-            default:
-                print("Not a safe place for humans")
-        }
+//        let shuffleSongs = MPMusicShuffleMode.Songs
+//        switch shuffleSongs
+//        {
+//            case .Songs:
+//                print("Mostly harmless")
+//            default:
+//                print("Not a safe place for humans")
+//        }
         
         originalCount = 420
         countLabel.text = "7:00"
@@ -99,6 +99,7 @@ class MainView: UIViewController{
         {
             countLabel.textColor = UIColor.redColor()
         }
+        
         if originalCount == 0
         {
             playNotification()
@@ -245,6 +246,22 @@ class MainView: UIViewController{
             loadCurrentSong()
             togglePlayback(true)
         }
+    }
+    
+    @IBAction func resetPressed(sender: UIButton!)
+    {
+        stopTimer()
+        loadCurrentSong()
+        if timerCount % 2 == 0
+        {
+            originalCount = 420
+        }
+        else
+        {
+            originalCount = 421
+        }
+        updateUI()
+        startStopTimer()
     }
 
 }
