@@ -699,8 +699,8 @@
         <image name="success-next-button.png" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ivW-eS-IVa"/>
         <segue reference="Hdx-j4-jBd"/>
+        <segue reference="Hpz-63-rki"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.24175134740000001" green="0.69202250539999999" blue="0.1380044557" alpha="1" colorSpace="calibratedRGB"/>
 </document>
